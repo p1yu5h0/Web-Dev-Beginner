@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+    <!-- We have linked a new font from fonts.google.com -->
+    <!-- and added the link in the geader file -->
+    <!-- Now we will add this font to our font family -->
+    <style>
+        p{
+            font-family: 'Zen Loop', cursive;
+            color: red;
+            font-size: 100px;
+            /* Pixel is 1/96 of inch */
+            line-height: 5.4em;
+            /* This line height is the number (here 5.4) multipied by font size distance betwn 2 lines */
+
+            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            /*This is a stack of fonts like if we dont have Franklin one we would jump to Arial Narrow */
+            /*This happens because some fonts are preinstalled in the computer but some have to be installed*/
+            /* There are some web safe fonts  */
+        }
+        span{
+            font-weight: bold;
+            font-size: 120px;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS Fonts</h3>
+    <p>Lets play with <span>fonts</span>. It is very Exciting.</p>
+</body>
+</html>

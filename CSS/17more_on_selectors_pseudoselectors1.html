@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors(Pseudo-selectors-1)</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        div p{
+            /* div ke undar jitne bhi p hain unme ye sab property aa jayegi */
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        }
+
+        div > p{
+            /* div ke undar direct child p ho tabhi ye work karega */
+            color: white;
+            background-color: black;
+        }
+
+        div + p{
+            /* vo class jiska pichla sibling div ho usme changes karna hai */
+            color: lightblue;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>
+                        This is another paragraph which is not a direct child of div but its somewhere inside div.
+                    </p>
+                </li>
+            </ul>
+            <p>This is another paragraph</p>
+        </div>  
+        This is yet another paragraph
+    </div>
+    <p>This is outermost paragraph.</p>
+</body>
+</html>

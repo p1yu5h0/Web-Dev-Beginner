@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            padding: 2px;
+            margin: 2px;
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* Intitalize the container as flex box */
+            display: flex;
+            /* This tells and make flex */
+            flex-direction: row; /*default direction*/
+            flex-direction: column; /*items comes column wise*/
+            flex-direction: row-reverse;
+            /* this row reverse reverses the row */
+            flex-direction: column-reverse;
+            /* also this sows that jo baad mein likha jaata hai vo upar wale ko overwrite kar deta hai */
+            flex-direction: row;
+            /* again overwrite */
+            flex-wrap: nowrap;
+            /* default value of flex-wrap which makes the page un-responsive */
+            /* when we check the responsiveness on increasing and decreasing the ratios, the items inside the container dont go to the next line but converges in the first line only */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse;
+            ulta wrap */
+
+            flex-flow: row wrap;
+            /* by flex-flow we can make use of two properties ek-sath like both direction and wrap */
+
+            justify-content: center;
+            /* THIS IS MOST IMPORTANT TO ALIGN ANYTHING IN THE CENTER */
+            justify-content: space-between;
+            /* This makes the distance between two items equal inside the container */
+            justify-content: space-around;
+
+            align-items: start;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: stretch;
+            /* Vertically even spaces are because of stretch */
+            align-items: center;
+            /* THIS ALIGNS THE ITEMS IN VERTICALLY CENTER */
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+        #item-1{
+            order: 37;
+        }
+        #item-2{
+            order: 40;
+            /* last mein vo jayega jiska order bada hoga */
+        }
+        #item-3{
+            order: 41;
+            flex-grow: 3;
+            /* this box is three times of that of the smallest box */
+        }
+        #item-4{
+            flex-grow: 2;
+            flex-shrink: 3;
+        }
+        #item-5{
+            order: 39;
+            flex-basis: 320px;
+            /* when flex-direction is set to row, flex basis will control width */
+            /* when flex-direction is set to column, flex basis will control height */
+        }
+        #item-6{
+            order: 38;
+            flex: 2 2 344px;
+            /* flex: flex-grow flex-shrink flex-basis */
+        }
+    </style>
+</head>
+<body>
+    <!-- The Flexbox Module was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface with powerful alignment capabilities. -->
+
+    <!-- CSS Flexbox is a better way to align itms into a contianer. -->
+
+    <!-- Flexbox = flexible + box -->
+
+    <!-- Make a flex container which have many flex item inside it -->
+    <!-- To make a container flex, just make its display felx -->
+    <h1>This is Flexbox tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+    </div>
+</body>
+</html>

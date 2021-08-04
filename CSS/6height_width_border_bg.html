@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width, border and background</title>
+    <style>
+        #firstPara{
+            background-color: palegreen;
+            height: 100px;
+            width: 400px;
+            /* Border namking way number 1 */
+            border-style: dashed;
+            border-width: 4px;
+            border-color: green;
+            border-radius: 10px;
+        }
+        #secondPara{
+            background-color: rgb(59, 240, 59);
+            height: 100px;
+            width: 400px;
+            /* Border making way number 2 */
+            border: 4px dashed green;
+            border-radius: 10px;
+        }
+        #thirdPara{
+            height: 600px;
+            width: 600px;
+            background-image: url('https://st1.bollywoodlife.com/wp-content/uploads/2020/09/FotoJet382.jpg');
+            border: 2px solid yellow;
+            background-repeat: no-repeat;
+            /*repeat-x and repeat-y mill make the image repreat x times in horizontal or y times in vertical*/
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>This is heading</h3>
+    <div>
+        <p id="firstPara">This is first paragraph</p>
+    </div>
+    <div>
+        <p id="secondPara">This is second paragraph</p>
+    </div>
+    <div>
+        <p id="thirdPara">This is third paragraph</p>
+    </div>
+</body>
+</html>

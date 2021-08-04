@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <style>
+        header{
+            border: 2px solid #73EEDC;
+            margin: auto;
+            width: 1160px;
+        }
+        img{
+            margin: auto;
+            display: block;
+            width: 200px;
+            height: 100px;
+        }
+        h3{
+            font-family: 'Pangolin', cursive;
+            margin: 0px;
+            text-align: center;
+            color: #3d857a;
+        }
+        .box{
+            border: 4px solid black;
+            background: #73EEDC;
+            margin: 4px 18px;
+            padding: 29px;
+            /* if we make display as inline block then the elements will be inline and we can adjust their width also */
+            display: inline-block;
+            width: 30%;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: auto;
+            width: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="https://media.wired.com/photos/5926ffe47034dc5f91bed4e8/master/pass/google-logo.jpg" alt="" >
+        <h3>Welcome to my website!!</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nobis maxime iste unde eum expedita minus, modi autem rerum, eos corrupti aspernatur adipisci voluptatum ipsam ab ullam reprehenderit dicta voluptates beatae omnis. Vitae, dolores?</p>
+        </div>
+        <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nobis maxime iste unde eum expedita minus, modi autem rerum, eos corrupti aspernatur adipisci voluptatum ipsam ab ullam reprehenderit dicta voluptates beatae omnis. Vitae, dolores?</p>
+        </div>
+        <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nobis maxime iste unde eum expedita minus, modi autem rerum, eos corrupti aspernatur adipisci voluptatum ipsam ab ullam reprehenderit dicta voluptates beatae omnis. Vitae, dolores?</p>
+        </div>
+    </div>
+</body>
+</html>

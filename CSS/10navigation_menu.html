@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color: lightgreen;
+            border-radius: 12px;
+        }
+        .navbar li{
+            float: left;
+            /* all are floating in their left */
+            list-style: none;
+            /* used to remove the bullet points */
+            /* here our beckground color disappers due to overflow */
+            /* hence we use overflow auto */
+            padding-top: 15px;
+        }
+        .navbar ul{
+            /* overflow auto is used to remove the overflow caused by ul */
+            overflow: auto;
+            list-style: none;
+            padding-inline-start: 0px;
+            margin-block-start: 1em;
+             margin-block-end: 1em;
+             margin-inline-start: -3px;
+             margin-inline-end: 0px;
+        }
+        .navbar li a{
+            margin-trim:initial;
+            margin-inline-start:20px;
+            margin-bottom:auto;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: blue;
+        }   
+        .navbar li a:hover{
+            color: yellow;
+            background-color: lightblue;
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid yellow;
+            border-radius: 7px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact Us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website...">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

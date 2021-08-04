@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <title>Before and After Pseudo-Selectors</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            background: url(https://source.unsplash.com/random/1920X1080);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        .navigation{
+            display: flex;
+            font-size: 20px;
+            margin: 43px;
+        }
+        li{
+            list-style: none;
+            padding: 30px 20px;
+        }
+        section{
+            height: 344px;
+            display: flex;
+            flex-direction: column;
+            margin: 3px 23px;
+            align-items: center;
+            /* border: 2px solid greenyellow; */
+            justify-content: center;
+            /* most helpful line */
+        }
+        section::before{
+            content: "This is content before section.";
+            padding: 43px;
+        }
+        section p{
+            text-align: center;
+            margin: 0;
+            padding: 23px;
+            font-size: 23px;
+        }
+        section h2{
+            font-size: 2.5rem;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+    <section>
+        <h2>Wecome to Code with P1YU5H</h2>
+        <br><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nulla maxime laboriosam, tenetur sunt earum dolor nam vero illo dolore voluptatem distinctio! Quisquam accusantium libero id quibusdam iste quia doloremque placeat suscipit. Facilis, dolores.</p>
+    </section>
+    <!-- <hr> -->
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute and nth chils pseudo selectors</title>
+    <style>
+      .container {
+        display: block;
+        width: 233px;
+        margin: auto;
+      }
+      input {
+        display: block;
+      }
+      input[type="text"] {
+        /* vo wala input tag jisme type text hai */
+        padding: 23px;
+        border: 2px solid red;
+      }
+      a[target] {
+        /* vo wla anchor tag jisme target set hai */
+        text-decoration: none;
+        color: violet;
+        font-size: 34px;
+      }
+      a[target="_self"] {
+        /* hence we can target any tag with its attributes */
+        color: pink;
+        font-size: 20px;
+      }
+      li:nth-child(4) {
+        /* This will apply css for fourth child */
+        color: rgb(60, 219, 39);
+      }
+      li:nth-child(2n-1) {
+        color: red;
+      }
+      li:nth-child(even) {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">
+        <a href="https://google.com" target="_blank">Go to google.com</a>
+      </h1>
+      <h1 class="heading">
+        <a href="https://facebook.com">Go to facebook.com</a>
+      </h1>
+      <!-- isme target set nahi hai toh a[target] trigger nahi hua -->
+      <h1 class="heading">
+        <a href="https://twitter.com" target="_self">Go to twitter.com</a>
+      </h1>
+      <!-- isme target set hai self pe  -->
+      <form action="" class="form-control">
+        <input type="text" placeholder="Enter your name" />
+        <input type="password" placeholder="Enter your password" />
+        <button>Submit Here!</button>
+      </form>
+      <ul>
+        <li class="item" id="item-1">Item1</li>
+        <li class="item" id="item-2">Item2</li>
+        <li class="item" id="item-3">Item3</li>
+        <li class="item" id="item-4">Item4</li>
+        <li class="item" id="item-5">Item5</li>
+        <li class="item" id="item-6">Item6</li>
+        <li class="item" id="item-7">Item7</li>
+        <li class="item" id="item-8">Item8</li>
+        <li class="item" id="item-9">Item9</li>
+        <li class="item" id="item-10">Item10</li>
+      </ul>
+    </div>
+  </body>
+</html>

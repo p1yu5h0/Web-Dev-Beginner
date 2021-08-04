@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            background-color: red;
+            font-size: 72px;
+            color: white;
+            text-align: center;
+            display: none;
+        } 
+        @media (max-width:300px){
+            /* iska matlab ye hai ki agar 0 se 300 px mein tumhari widht kahi pe bhi hai toh tumhari width block ho jayegi */
+            #box-1{
+                display: block;
+                background-color: greenyellow;
+            }
+        }
+        @media (max-width:500px) and (min-width:300px){
+            /* 300 aur 500px ke beech apan ko iPad ki display show ho rhi hai */
+            #box-2{
+                display: block;
+                background-color: cyan;
+            }
+        }
+        @media (max-width:800px) and (min-width:500px){
+            #box-3{
+                display: block;
+                background-color: violet;
+            }
+        }
+        @media (min-width:800px){
+            #box-4{
+                display: block;
+                background-color: hotpink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">Mein ek iPhone hoon</div>
+    <div class="box" id="box-2">Mein ek iPad hoon</div>
+    <div class="box" id="box-3">Mein ek MacBook 14inch M1 hoon</div>
+    <div class="box" id="box-4">Mein ek MacBook 15.6 M1 hoon</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors and more desgning</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(152, 250, 53);
+            padding: 34px;
+            margin: 34px auto;
+            width: 300px;
+        }
+        a{
+            text-decoration: none;
+            /* underline gayad karne ke liye  */
+            font-weight: 540;
+        }
+        a:hover{
+            /* When we bring pointer on the a */
+            color: dodgerblue;
+            background-color: pink;
+        }
+        a:visited{
+            color: lightblue;
+            /* if the link becomes visited then we will see this color on the text */
+        }
+        a:active{
+            background-color: lime;
+            /* at the time of clicking this link we will see lime color */
+        }
+        .btn{
+            background-color: azure;
+            padding: 6px;
+            border: 0px;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 4px;
+        }
+        button:hover{
+            color: dodgerblue;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga iusto rem facere libero inventore quae totam hic! Vero sunt quaerat corrupti unde dignissimos fugiat hic, labore ut impedit tempore voluptas.</p>
+        <a href="https://google.com" target="_blank" class="btn">Read more</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+</html>

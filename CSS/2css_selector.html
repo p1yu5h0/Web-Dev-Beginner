@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Id Selector */
+        #redElement{
+            color: red;
+        }
+        /* Element Selector */
+        p{
+            color: pink;
+        }
+        /* CLass Selector */
+        .class1{
+            color: blue;
+        }
+        .class2{
+            background-color: aquamarine;
+        }
+        /* Grouping Selector */
+        footer,span{
+            background-color: pink;
+            color: greenyellow;
+        }
+        /* We also have one more selector in CSS named as UNIVERSAL selector */
+        *{
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+    <p id="redElement">This is a simple paragraph to demonstrate CSS Selectors</p>
+    <p class="class1">This is another simple paragrapgh to demonstrate CSS Selectors</p>
+    <div class="class1">
+        <p>This is another simple paragrapgh inside a div to demonstrate CSS Selectors</p>
+        <p class="class1 class2">This is another simple paragrapgh inside a div with a defined class to demonstrate CSS Selectors</p>
+        <span>This is span</span>
+    </div>
+    <br>
+    <footer>This is footer </footer>
+</body>
+</html>

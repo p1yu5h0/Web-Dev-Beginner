@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        *{
+
+        }
+        body{
+            font-family: 'Indie Flower', cursive;
+        }
+        .container{
+            width: 900x;
+            margin: 33px auto; 
+            /*here y is given 33px and x is given auto means left margin=right margin*/
+            background-color: yellowgreen;
+            border: 10px solid purple;
+        }
+        .item{
+            border: 7px solid grey;
+            padding: 12px 3px;
+            margin: 12px 3px;
+            background-color: green;
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+        }
+        #computers{
+            float:left;
+            width: 48%;
+        }
+        #stationary{
+            clear: left;
+            float:left;
+            width: 100%;
+        }
+        p,h3{
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitsPara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit doloremque fugiat vero placeat consequatur et perferendis impedit quibusdam similique quasi.</p>
+        </div>
+        <div id="computers" class="item">
+            <h3>Computers</h3>
+            <p id="computersPara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit doloremque fugiat vero placeat consequatur et perferendis impedit quibusdam similique quasi.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationaryPara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit doloremque fugiat vero placeat consequatur et perferendis impedit quibusdam similique quasi.</p>
+        </div>
+    </div>
+</body>
+</html>

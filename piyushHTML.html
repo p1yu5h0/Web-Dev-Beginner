@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!-- yahan se meri file start hori hai -->
+<!-- Html is just a collection of tags and attributes -->
+<!-- Ctrl+D is used to copy a line to the next line -->
+<!-- Alt+Arrow key is used to move a line or a para up or down -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="This is description">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <title>Piyush HTML Tutorial</title>
+    <!-- SEO uses metatags studied later -->
+    <link rel="stylesheet" href="/CSS/piyush.css">
+    <!-- This is how you include external CSS -->
+    <script src="piyush.js"></script>
+    <!-- This is how you include JavaScript -->
+    <!-- This is how head tag works -->
+</head>
+<body>
+    Ye meri body ka content hai 
+    <h1>Piyush</h1>
+    <h2>Piyush</h2>
+    <h3>Piyush</h3>
+    <h4>Piyush</h4>
+    <h5>Piyush</h5>
+    <h6>Piyush</h6>
+    <p>This is Piyush</p>
+    <p>This is new paragraph</p>
+    <!-- Power of Emmit can be seen by Lorem -->
+    <!-- Lorem40 used to print 40 dummy words -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>this is strong</strong> Atque sequi doloribus quia, est architecto praesentium tenetur. Delectus recusandae itaque, <em>This is emphasize</em> placeat provident enim magni reprehenderit impedit quae dolorum minus commodi quam!</p>
+    <!-- we have bold and italics tags in html5 but it is recommended to use strong and emphasise or CSS 3 only -->
+    <p>this 
+        is new line 
+    </p>
+    <hr>
+    <p>this <br>
+        is new line 
+        <!-- using br for line breaks is not a good practise -->
+    </p>
+    <a href="https://google.com" target="_blank">Go to Google</a><br>
+    <!-- target attribute open the link in new tab -->
+    <a href="https://facebook.com" target="_blank">Go to Facebook</a><br>
+    <a href="https://linkedin.com" target="_blank">Go to LinkedIn</a><br>
+    <a href="https://instagram.com" >Go to Instagram</a><br>
+    <a href="/piyush.html" target="_blank">Piyush.html</a><br>
+
+    <img src="https://source.unsplash.com/user/erondu/1600x900" alt="Server down, api not working" width="200" height="100"><br>
+    <img src="/a463ddf5ff71bbb3746808f7dd999f914a402a75.jpeg" alt="Image not available" width="200" height="100"><br>
+    <!-- width and height are not used in html and they are set by CSS 3 only -->
+
+    <ol type="I">
+        <li>This is first element of ordered list.</li>
+        <li>This is second element of ordered list.</li>
+        <li>
+            <ol>
+                <li>Another One</li>
+                <li> Another Two </li>
+            </ol>
+        </li>
+        <li>This is third element of ordered list.</li>
+    </ol>
+
+    <ul >
+        <li>This is first element of unordered list.</li>
+        <li>This is second element of unordered list.</li>
+        <li>This is third element of unordered list.</li>
+    </ul>
+    
+    <!-- Tables -->
+    <h3>HTML Table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Employee ID</th>
+                <th>Employee Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Piyush Agrawal</td>
+                <td>69420</td>
+                <td>Co-Founder</td>
+            </tr>
+            <tr>
+                <td>Anurag Garg</td>
+                <td>50120</td>
+                <td>Co-Founder</td>
+            </tr>
+            <tr>
+                <td>Md. Arsh Khan</td>
+                <td>696969</td>
+                <td>CEO</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- Forms -->
+    <h3>HTML Form</h3>
+    <form action="beckend.php">
+        <!-- action is used to link the form with the backend, we can use php or node js or anyother -->
+        <label for="name">Name:- </label>
+        <div>
+             <input type="text" name="myName" id="name">
+        </div>
+        <!-- By using label when we click name in our document the input area already gets selected and we can write there -->
+        <br>
+        <div>
+            Roll: <input type="text" name="myRoll" id="">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail" id="">
+            <!-- name vo attribute hai jiss nam se backend apke email ko phechanega -->
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="myDate" id="">
+        </div>
+        <br>
+        <div>
+            Phone Number: <input type="number" name="myNumber" id="">
+        </div>
+        <br>
+        <div>
+            Are you Elegible?: <input type="checkbox" name="myElegbility" id="" checked>
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGende" id="">
+            Female <input type="radio" name="myGende" id="">
+        </div>
+        <br>
+        <div>
+            Write about yourself:- <br>
+            <textarea name="myText" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car:-</label>
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <option value="bmw" selected>BMW</option>
+                <option value="mer">Mercidies</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+    <br>
+
+    <h3>Inline and Block Elements</h3>
+    <p style="border: 2px solid red;"> This is a paragraph</p> <p style="border: 2px solid blue;">This is a paragraph</p>
+    <span style="border: 2px solid red;">This is a span</span> <span style="border: 2px solid blue;">This is a span</span><br><br>
+    <a style="border: 2px solid red;">This is a span</a> <a style="border: 2px solid blue;">This is a span</a>
+
+    <br>
+
+    <h3>IDS and Classes in HTML</h3>
+    <div id="mainBox" class="redBg">
+        <!-- IDs are specific for any tag like here we have id of div as "mainBox" so we cant call any other tag as "mainBox" -->
+        <!-- If we gave id of h3 above as "mainBox" it will be wrong -->
+        <!-- In JS we can call and many changes in any specific different tag with the help of its ID -->
+        <!-- We can also define a class which is global and any tag in that class will get all the properties written in that class -->
+        <!-- One element can only have one id but many elements can have same class -->
+        This is mainBox.
+    </div> <br>
+    <span id="mainBox1" class="redBg">
+        This is mainBox1 which have different id but same class as of last div.
+    </span>
+    <!-- Use of Emmit on how it makes our work easy -->
+    <!-- . is for class and # if for ID -->
+    <!-- span.redBg#mainSpan == <span class="redBg" id="mainSpan">|</span> -->
+    <span class="redBg" id="mainSpan"></span>
+    <!-- Emmit takes div tag as default -->
+    <div class="redbg redbgBlackBorder blueblack"></div>
+
+    <h3>HTML Entities</h3>
+    <div>
+        This is                  paragraph.
+        <!-- No space in between when we go LIVE -->
+    </div>
+    <div>
+        This is paragraph &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; paragraph.
+        <p>to write comparative < and this > sign we use &lt;p&gt; </and></p>
+        <!-- By using non binary space we get a space between two words -->
+        <p>pound is written like &pound;</p>
+        <p>copyright is written like &copy;</p>
+        <p>this is written like &rAarr;;</p>
+        <p>this is written like &frac14;</p>
+        <p>Empty Character is written like &#8203;&#8203;</p>
+    </div>
+
+    <h3>HTML Semantic Tags</h3>
+    <!-- examples header footers articles details figures main section summary side aside etc -->
+    <!-- Explore on own -->
+    <header class="page-header">
+        <h4>Cute Puppies Express!</h4>
+    </header>
+    <main>
+        <p>I love beagles <em>so</em> much! Like, really, a lot. They’re adorable and their ears are so, so snuggly soft!</p>
+    </main>
+    <article>
+        <h1>How to be a wizard</h1>
+        <ol>
+            <li>Grow a long, majestic beard.</li>
+            <li>Wear a tall, pointed hat.</li>
+            <li>Have I mentioned the beard?</li>
+        </ol>
+        <footer>
+            <p>© 2018 Gandalf</p>
+        </footer>
+    </article>
+    
+    <div>
+        Now moving to CSS 
+        <ul>
+            <li>CSS Gives style to raw HTML.</li>
+            <li>CSS is Cascading Style Sheets.</li>
+            <li>CSS makes websites responsive.</li>
+            <li>HTML makes structue but CSS takes responsibility of design.</li>
+        </ul>
+    </div>
+
+    <div>
+        syntax of CSS <br>
+        p { color: blue } <br>
+        here p is selector <br>
+        <!-- p means kahan kahan par apan ye property apply karenge  -->
+        color is property <br>
+        blue is value <br>
+
+        <h4>Another syntax of CSS</h4>
+        group of selectors{ 
+            declaration box 
+        }
+        <!-- example -->
+        <!-- header, p.intro{
+            background color:red;
+            border radius : 3px;
+        } -->
+        <h4>Three ways to add CSS in our html</h4>
+        <ol type="1">
+            <li>Inline CSS: CSS added directly using the style attribute</li>
+            <li>Internal CSS: CSS is kept inside the head tag in style tag</li>
+            <li>External CSS: CSS is kept seprately inside a .css style sheet</li>
+        </ol>
+    </div>
+    
+</body>
+</html>

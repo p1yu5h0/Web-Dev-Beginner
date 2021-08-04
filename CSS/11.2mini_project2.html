@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Mini Project 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+        body{
+            background-color: #73EEDC;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        .pricing-table{
+            display: flex;
+            /* A flex container expands items to fill available free space or shrinks them to prevent overflow. */
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: min(1600px,100%);
+            margin: auto;
+        }
+        .pricing-card{
+            flex: 1;
+            max-width: 360px;
+            background-color: #fff;
+            margin: 20px 10px;
+            text-align: center;
+            /* cursor: pointer; */
+            overflow: hidden;
+            color: #2d2d2d;
+            transition: 0.5s linear;
+        }
+        .pricing-card-header{
+            background-color: #0fbcf9;
+            display: inline-block;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 0 0 20px 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: 0.4s linear;
+        }
+        .pricing-card:hover .pricing-card-header{
+            box-shadow: 0 0 0 26em #0fbcf9;
+        }
+        .price{
+            font-size: 70px;
+            color: #0fbcf9;
+            margin: 40px 0;
+            transition: 0.2s linear;
+        }
+        .price sup, .price span{
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .pricing-card:hover ,.pricing-card:hover .price{
+            color: #fff;
+        }
+        .pricing-card li{
+            font-size: 16px;
+            padding: 10px 0;
+            text-transform: uppercase;
+        }
+        .order-btn{
+            display: inline-block;
+            margin-bottom: 40px;
+            margin-top: 80px;
+            border: 2px solid #0fbcf9;
+            color: #0fbcf9;
+            padding: 18px 40px;
+            border-radius: 8px;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: 0.3s linear;
+        }
+        .order-btn:hover{
+            background-color: #0fbcf9;
+            color: white;
+        }
+        @media screen and (max-width:1100px){
+            .pricing-card{
+                flex: 50%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="pricing-table">
+        <div class="pricing-card">
+            <h3 class="pricing-card-header">Personal</h3>
+            <div class="price"><sup>₹</sup>150<span>/MO</span></div>
+            <ul>
+                <li><strong>3</strong> Websites</li>
+                <li><strong>10 gb</strong> RAM</li>
+                <li><strong>20</strong> Micro-USB Cables</li>
+                <li><strong>50</strong> CDs</li>
+                <li><strong>1</strong> Mac Book Air M1</li>
+            </ul>
+            <a href="#" class="order-btn">Order Now!</a>
+        </div>
+
+        <div class="pricing-card">
+            <h3 class="pricing-card-header">Professional</h3>
+            <div class="price"><sup>₹</sup>300<span>/MO</span></div>
+            <ul>
+                <li><strong>10</strong> Websites</li>
+                <li><strong>100 gb</strong> RAM</li>
+                <li><strong>50</strong> Micro-USB Cables</li>
+                <li><strong>100</strong> CDs</li>
+                <li><strong>25</strong> Mac Book Air M1</li>
+            </ul>
+            <a href="#" class="order-btn">Order Now!</a>
+        </div>
+
+        <div class="pricing-card">
+            <h3 class="pricing-card-header">Premium</h3>
+            <div class="price"><sup>₹</sup>500<span>/MO</span></div>
+            <ul>
+                <li><strongM</strong> Websites</li>
+                <li><strong>150 gb</strong> RAM</li>
+                <li><strong>50</strong> Micro-USB Cables</li>
+                <li><strong>500</strong> CDs</li>
+                <li><strong>50</strong> Mac Book Air M1</li>
+            </ul>
+            <a href="#" class="order-btn">Order Now!</a>
+        </div>
+
+        <div class="pricing-card">
+            <h3 class="pricing-card-header">Ultimate</h3>
+            <div class="price"><sup>₹</sup>1000<span>/MO</span></div>
+            <ul>
+                <li><strong>50</strong> Websites</li>
+                <li><strong>400 gb</strong> RAM</li>
+                <li><strong>100</strong> Micro-USB Cables</li>
+                <li><strong>100</strong> CDs</li>
+                <li><strong>200</strong> Mac Book Air M1</li>
+            </ul>
+            <a href="#" class="order-btn">Order Now!</a>
+        </div>
+
+    </div>
+</body>
+</html>

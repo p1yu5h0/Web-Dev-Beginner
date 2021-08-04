@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-Index</title>
+    <style>
+        /* HTML elements collapse with each other, then the element with smaller z-index value will be covered by the element with larger z-index value.*/
+        /* Z-index does not work on static position value. It only works on the elements with position: relative, absolute, fixed, or sticky.*/
+        
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+            margin: 2px;
+        }
+        /* to demostrate Z-Index we make positions of box1 and box2 relative */
+        #box1{
+            position: relative;
+            top: 49px;
+            z-index: 34;
+            background-color: green;
+        }
+        #box2{
+            position: relative;
+            top: 14px;
+            z-index: 35;
+            /* jiski bhi z-index overlap ke time badi hogi vo upar aa jayega */
+            /* yahan pe red ki z index green se zyada hai */
+            background-color: red;
+            /* visibility: hidden;
+            display: none; */
+            /* visibility hidden jagah ko reserve karke raktha hai but display none pure element ko hata deta hai */
+        }
+        #box3{
+            background-color: blue;
+        }
+        #box4{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.box#box$*4 -->
+    <!-- Here $ gives values 1 2 3 4  -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
