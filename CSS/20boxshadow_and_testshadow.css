@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    padding: 23px 12px;
+    margin: 23px 12px;
+    border: 2px solid red;
+    background-color: burlywood;
+    box-shadow: 10px 13px green;
+    /* box-shadow: x-offset  y=offset color*/
+}
+#card-2{
+    text-shadow: 3px 4px red;
+    box-shadow: -10px 13px green;
+}
+#card-3{
+    box-shadow: -10px -13px 10px green;
+     /* box-shadow: x-offset  y=offset blur-radius color*/
+}

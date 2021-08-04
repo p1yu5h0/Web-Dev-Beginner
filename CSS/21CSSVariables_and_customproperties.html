@@ -5,37 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Variables and Custom Properties</title>
+    <link rel="stylesheet" href="/CSS/21CSSVariables_and_customproperties.css">
     <style>
-        :root{
-            /* variables made here are global variable */
-            --primary-color: blue;
-            --danger-color: red;
-            --maxw: 733px;
-        }
-        .box{
-            /* lets make a variable of box background */
-            --box-color: blue;
-            width: 200px;
-            height: 200px;
-            background-color: var(--box-color);
-            padding: 2px;
-            border: 2px solid red;
-            box-shadow: 3px 3px var(--box-color);
-            margin: 2px 9px;
-        }
-        .container{
-            /* --box-color: blue; */
-            max-width: var(--maxw);
-            margin: auto;
-            display: flex;
-            flex-direction: row;
-            background-color: var(--box-color);
-            /* --box-color is local variable of .box */
-            background-color: var(--danger-color);
-            /* --danger-color is global variable of box */
-            align-items: center;
-            justify-content: center;
-        }
+        
     </style>
 </head>
 <body>
