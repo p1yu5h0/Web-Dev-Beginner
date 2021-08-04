@@ -15,6 +15,7 @@
     /* transition: all-properties transition-duration transition-timing-function transition-delay */
     transition: all 0.5s ease-in-out 0.3s;
     /* by this all the width of the box increases slowly */
+    /* Piyush  */
 }
 #box:hover{
     background-color: lightblue;
