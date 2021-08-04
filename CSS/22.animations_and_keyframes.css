@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+}
+.box1 {
+  display: flex;
+  flex-direction: row;
+  background-color: greenyellow;
+}
+#box1-1 {
+  background-color: green;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  animation-name: p1yu5h0;
+  animation-duration: 2s;
+  animation-iteration-count: 1e18;
+  animation-fill-mode: forwards;
+  /* vo properties rhe jaye TO pe  */
+  animation-timing-function: ease-in;
+  /* starting mein dheeme but baad mein tez */
+  /* animation-delay: 1s; */
+  /* 1 second late chalu hoga  */
+  animation-direction: alternate-reverse;
+
+  /* These properties can be set using this shorthand */
+  /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+  /* animation: p1yu5h0 5s ease-in 1s 12 backwards; */
+
+
+}
+#box1-2 {
+  background-color: blueviolet;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  animation-name: p1yu5h2;
+  animation-duration: 2s;
+  animation-iteration-count: 1e18;
+  animation-fill-mode: backwards;
+  animation-direction: alternate;
+}
+.box2 {
+  background-color: pink;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  animation-name: p1yu5h1;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1e18;
+  animation-direction: alternate-reverse;
+}
+.box3{
+ 
+  background-color: aqua;
+  color: aqua;
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+@keyframes p1yu5h1 {
+  0% {
+    background-color: rgb(151, 80, 92);
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    top: 250px;
+    left: 0px;
+  }
+  75% {
+    top: 250px;
+    left: 750px;
+  }
+  100% {
+    top: 0px;
+    left: 750px;
+  }
+}
+@keyframes p1yu5h0 {
+  from {
+    width: 250px;
+  }
+  to {
+    width: 500px;
+  }
+}
+@keyframes p1yu5h2 {
+  from {
+    width: 500px;
+  }
+  to {
+    width: 250px;
+  }
+}
