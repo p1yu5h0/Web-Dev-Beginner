@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Strings and String Methods</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <div id="content"></div>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim atque sunt minus a ex unde. Ut laboriosam obcaecati ullam ducimus minima blanditiis quasi voluptatum, ipsa facere quaerat recusandae, deleniti sequi at laborum necessitatibus! Hic.
+        </p>
+    </div>
+    <script>
+        var string ="This ";
+        // we can use both double and single quotes
+        console.log(string);
+        var name = "Piyush"
+        var channel = "Code with Piyush "
+        var message = "is a good boy"
+        var temp = `${name} is a nice person and he has a channel names ${channel}`;
+        // jab baad mein badi templates banate hain apan toh iss ${} ko as a fill in the blanks use kar sakte hai apan
+        console.log(string+name+message)
+        console.log(temp);
+        var len = name.length;
+        console.log(`Length of name is ${len}`)
+        console.log("hello \n world")
+
+        var y = new String("this");
+        console.log(y);
+        // making string with the help of a constructor
+
+        document.getElementById('content').innerHTML = '<h3>this is an h3 heading</h3>';
+
+    </script>
+</body>
+</html>
