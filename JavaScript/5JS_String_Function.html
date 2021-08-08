@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS String Functions</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    
+    <script>
+        var str = "This is a string"
+        console.log(str);
+
+        // first occurance of a substring
+        var num = str.indexOf('is')
+        console.log(num)
+
+        // last occurance of a substring
+        num = str.lastIndexOf('is')
+        console.log(num)
+
+        // subsrting of a string
+        var substr = str.slice(1,5); //.slice can take negative values
+        console.log(substr)
+        var substr2 = str.substring(1,6); //.substring cant take negative values
+        console.log(substr2)
+        var substr3 = str.substr(1,6); //.substr kheta hai 1 index se chalu karo aur 6 length tak ke words le lo 
+        console.log(substr3)
+
+        //replace a word from a string
+        var replace = str.replace('string', 'Piyush Agrawal')
+        console.log(str);
+        console.log(replace);
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        var newString = str.concat(" which have many characters");
+        console.log(newString)
+
+        var stringWithWhiteSpaces = "                                  this     iss      a        string with      many       white                   spaces                                "
+        console.log(stringWithWhiteSpaces)
+        console.log(stringWithWhiteSpaces.trim()) //isne starting aur ending se baas jitne bhi white spaces thi vo hata di hai 
+
+        var char = str.charAt(2);
+        console.log(char)
+
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="container">Ye ek HTML Document hai</div>
+    <script>
+        let myVar = 34;
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+
+        //lets create an object
+
+        let employee = {
+            name: "Piyush",
+            salary: 10,
+            college: "IET DAVV",
+            gf: "undefined",
+        }
+        console.log(employee);
+
+
+        let names = [5,2,4,'Piyush',undefined];
+        console.log(names);
+
+        let name1 = new Array(1,2,4,'Piyush',undefined);
+        console.log(name1)
+        console.log(names.length)
+
+        names=names.sort();
+        names.push("This is pushed")
+        console.log(names)
+    </script>
+</body>
+</html>
