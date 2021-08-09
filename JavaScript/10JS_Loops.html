@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="container">
+        This is about loops
+    </div>
+    <script>
+        // for loop
+        for(let i=0;i<=3;i++){
+            console.log(i);
+        }
+        let friends = ["Monu", "Sonu", "Ronu", "Tonu", "Prash", "Majnu"];
+        for(let i=0;i<friends.length;i++){
+            console.log(friends[i]);
+        }
+
+        //for each loop
+        //in modern JS we can write this thing easily
+        friends.forEach(element => {
+            console.log("Hello "+ element + " to modern JS")
+        });
+
+        //for of loop
+        for(element of friends){
+            console.log("This is another way " + element);
+        }
+
+        let employees= {
+            name: "Piyush",
+            age: 16,
+            gf: undefined
+        }
+
+        //***********************
+        //use this loop to iterate over objects in JS
+        //for in loop
+        for(key in employees){
+            console.log(`The ${key} of employee is ${employees[key]}`);
+        }
+
+        //while and do while loop same as other langs
+    </script>
+</body>
+</html>

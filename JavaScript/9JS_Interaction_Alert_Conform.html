@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Interaction, Alert and Conform</title>
+</head>
+<body>
+    <div class="container">
+        This is a container.
+    </div>
+    <script>
+        //alert in inbrowser-JS
+        //does not return anything
+        alert("This is a message")
+        //this open a modal window which mean jab tak apan usse close nahi karenge tab tak apan uss page ke saath kuch nahi kar sakte
+
+        let name = prompt("What is your name?", "Guest");
+        // name variable stores name 
+        // here the syntax is prompt("Question", "Default Argument");
+        console.log(name)
+
+        let submit = confirm("Do you really want to submit?");
+        console.log(submit);
+
+        if(submit){
+            console.log("Your form have been successfully submitted.");
+        } else {
+            console.log("Your form have not been submitted.");
+        }
+
+    </script>
+</body>
+</html>
