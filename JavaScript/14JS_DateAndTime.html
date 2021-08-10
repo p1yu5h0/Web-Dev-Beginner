@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Date and Time</title>
+    <style>
+      .container {
+        font-size: 16px;
+        background-color: yellowgreen;
+        border: 2px solid yellow;
+        padding: 34px;
+        margin: 2px;
+        text-align: center;
+      }
+      #time {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>Current time is <span id="time"></span></div>
+    </div>
+    <script>
+      console.log("This is date and time lecture");
+
+      let now = new Date();
+      console.log(now);
+
+      // this is reference date
+      let dt = new Date(0);
+      console.log(dt);
+
+      //let newDate = new Date(year, month, date, hours, minutes, seconds, milliseconds);
+      let newDate = new Date(2021, 8, 10, 8, 20, 0, 0);
+      console.log(newDate);
+      //here new Date is a constructor
+
+      let yr = newDate.getFullYear();
+      console.log("The year is " + yr);
+
+      let dat = newDate.getDate();
+      console.log("The date is " + dat);
+
+      let mn = newDate.getMonth();
+      console.log("The month is " + mn);
+
+      let hr = newDate.getHours();
+      console.log("The hour is " + hr);
+
+      newDate.setDate(26);
+      console.log(newDate);
+
+      //Date.now()
+      //1628564516390
+      //run this to get time in milliseconds from the reference time
+      //we can use this to calculate time differences
+
+      setInterval(updateTime, 1000);
+
+      function updateTime() {
+        time.innerHTML = new Date();
+      }
+    </script>
+  </body>
+</html>

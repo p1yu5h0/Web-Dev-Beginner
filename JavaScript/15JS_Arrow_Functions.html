@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Functions</title>
+  </head>
+  <body>
+    <div class="container">This is a container</div>
+    <script>
+      function greet() {
+        console.log("Good Afternoon");
+      }
+      greet();
+
+      //another easy way to make functions is
+      greet1 = () => {
+        console.log("Good Afternoon1");
+      };
+      greet1();
+
+      sum = (a, b) => {
+        //in parenthesis we pass the arguments
+        console.log(a + b);
+      };
+      sum1 = (a, b) => {
+        //in parenthesis we pass the arguments
+        return a + b;
+      };
+
+      //most easy shortcut
+      sum2 = (a, b) => a + b;
+      //no need to write return also
+
+      //also if we have just one argument
+      sum3 = (a) => a * 10;
+      //no need to use brackets in single argument
+
+      sum(5, 2);
+
+      setInterval(() => {
+        //rather than making a new function we can write a function in this arrow only
+        console.log("Good Evening");
+      }, 1000);
+
+      let obj1 = {
+        names: ["Piyush", "Anuj", "SkillF", "DJPattu"],
+        speak() {
+          this.names.forEach((student) => {
+            console.log("Kukdoo Koo " + student);
+          });
+        },
+      };
+      obj1.speak();
+    </script>
+  </body>
+</html>

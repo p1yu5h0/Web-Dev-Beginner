@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manupulating DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Our Services</li>
+            <li>Dont click this!</li>
+        </ul>
+    </div>
+    <div class="container">
+        Ye mera dusra container hai
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+        // run main.innerHTML on console and you get the elements of main as a string in the console
+        let navi = document.getElementById('nav');
+        console.log(navi);
+        // run nac.innerHTML = <li>Dyanmic Element</li> in the console and see that this have changed the inner html that all the other li elements goes off and we are left only with <li>Dyanmic Element</li>
+
+        let conatiners = document.getElementsByClassName('container');
+        console.log(conatiners);
+        // we get to see like this:-
+        // we get an html collection
+        // HTMLCollection(2) [div#main.container, div.container, main: div#main.container]
+        //0: div#main.container
+        //1: div.container
+        //length: 2
+        //main: div#main.container
+
+        // conatiners[0]
+        // <div id=​"main" class=​"container">​<ul id=​"nav">​…​</ul>​</div>​
+        // conatiners[1]
+        // <div class=​"container">​ Ye mera dusra container hai ​</div>​
+        
+
+
+        //we can also use CSS Selectors to select elements in stylesheet
+        let sel = document.querySelector('.container');
+        //it selects the first .container inside the style sheet
+        console.log("Selector returns", sel);
+
+        //sly we can do this for ids
+        let sel1 = document.querySelector('#nav');
+        console.log("Selector returns", sel1);
+
+        let sel2 = document.querySelector('#nav>li');
+        console.log("Selector returns", sel2);
+
+        let sel3 = document.querySelectorAll('#nav>li');
+        console.log("Selector returns", sel3);
+        //sel3[1].innerHTML = "Inserted"
+        //"Inserted"
+
+
+    </script>
+</body>
+</html>
