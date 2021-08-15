@@ -1,0 +1,1 @@
+This is a random file made by me to use fs ie. read file module in Piyush js.
